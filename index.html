@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#F7F5FC">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/webclip-mark.svg">
+    <meta name="description" content="WebClip Studio — private browser-based video editing.">
+    <title>WebClip Studio — Your story starts here</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/dialogs.css">
+    <link rel="stylesheet" href="css/landing-ui.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/edit.css">
+    <link rel="stylesheet" href="css/tools.css">
+</head>
+<body data-theme="light">
+    <div id="app">
+        <section id="welcome" class="welcome">
+            <header class="landing-header page-width">
+                <a class="brand" href="#" aria-label="WebClip Studio home"><img class="brand-mark" src="assets/icons/webclip-mark.svg" alt=""><span>WebClip <em>Studio</em></span></a>
+                <nav id="landingNavigation" class="landing-nav" aria-label="Main navigation">
+                    <a href="#features">Features</a>
+                    <a href="#how">How it works</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="icon-button theme-toggle" type="button" aria-label="Light theme active. Switch to dark theme" title="Switch to dark theme" aria-pressed="false">
+                        <svg class="theme-icon sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.7"></circle><path d="M12 2.2v2.1M12 19.7v2.1M4.9 4.9l1.5 1.5m11.2 11.2 1.5 1.5M2.2 12h2.1m15.4 0h2.1M4.9 19.1l1.5-1.5M17.6 6.4l1.5-1.5"></path></svg>
+                        <svg class="theme-icon moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.7 8.7 0 0 1 8.9 3.8 8.8 8.8 0 1 0 20.2 15.1Z"></path></svg>
+                    </button>
+                    <button id="startTop" class="button primary small"> Start editing ↗ </button>
+                    <button id="mobileMenu" class="icon-button mobile-menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="landingNavigation">☰</button>
+                </div>
+            </header>
+
+            <main>
+                <section class="hero page-width">
+                    <div class="hero-copy">
+                        <p class="hero-kicker">A simpler way to shape your footage</p>
+                        <h1> Your story.<br> Your vision.<br> <span>In motion.</span> </h1>
+                        <p class="hero-description">A focused video editing workspace for the moments worth keeping. Refine your footage, find your look, and export your story — right from your browser.</p>
+                        <div class="hero-actions">
+                            <button id="start" class="button primary large">Open video editor <span aria-hidden="true">↗</span></button>
+                            <a class="button secondary large hero-secondary" href="#features">Explore features <span aria-hidden="true">↓</span></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="features" class="features page-width">
+                    <div class="section-heading">
+                        <div>
+                            <div class="eyebrow"> YOUR CREATIVE TOOLKIT </div>
+                            <h2> Everything you need to<br> make it <span>yours.</span> </h2>
+                        </div>
+                        <p> Thoughtful tools for shaping footage, finding your look, adding meaning, and getting your finished cut out into the world. </p>
+                    </div>
+
+                    <div class="feature-grid">
+                        <article class="feature-card">
+                            <div class="feature-card-top">
+                                <span class="feature-icon purple" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.3"></circle><circle cx="6" cy="18" r="2.3"></circle><path d="m8 7.5 12 9M8 16.5 20 7M14.5 12l5.5 5"></path></svg>
+                                </span>
+                                <span class="feature-number">01</span>
+                            </div>
+                            <h3>Trim the noise</h3>
+                            <p>Shape your story with an intuitive timeline, clean cuts and precise clip controls.</p>
+                            <div class="feature-meta"><span>Timeline editing</span><span class="feature-arrow" aria-hidden="true">↗</span></div>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-card-top">
+                                <span class="feature-icon orange" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 5l12 12M4 9l11 10M13 5l7 7"></path></svg>
+                                </span>
+                                <span class="feature-number">02</span>
+                            </div>
+                            <h3>Find your look</h3>
+                            <p>Dial in brightness, contrast and grayscale to set the mood for every frame.</p>
+                            <div class="feature-meta"><span>Visual adjustments</span><span class="feature-arrow" aria-hidden="true">↗</span></div>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-card-top">
+                                <span class="feature-icon green" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M5 6h14M12 6v13"></path></svg>
+                                </span>
+                                <span class="feature-number">03</span>
+                            </div>
+                            <h3>Say it with text</h3>
+                            <p>Add custom titles and place them exactly where your story needs them.</p>
+                            <div class="feature-meta"><span>Text overlays</span><span class="feature-arrow" aria-hidden="true">↗</span></div>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-card-top">
+                                <span class="feature-icon blue" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M3 9c2.2-2.5 4.3-2.5 6.5 0s4.3 2.5 6.5 0 3.3-2.5 5-1.2M3 15c2.2-2.5 4.3-2.5 6.5 0s4.3 2.5 6.5 0 3.3-2.5 5-1.2"></path></svg>
+                                </span>
+                                <span class="feature-number">04</span>
+                            </div>
+                            <h3>Make it sound right</h3>
+                            <p>Bring in background audio and balance the sound to match the moment.</p>
+                            <div class="feature-meta"><span>Audio control</span><span class="feature-arrow" aria-hidden="true">↗</span></div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="how" class="how page-width">
+                    <div class="how-card">
+                        <div>
+                            <div class="eyebrow"> YOUR PROCESS, WITHOUT THE FRICTION </div>
+                            <h2> From raw footage<br> to <span>ready to share.</span> </h2>
+                            <p> Skip the setup and stay in the creative flow. Your media stays on your device while you build, polish, and export. </p>
+                            <button id="startBottom" class="button primary"> Create your first cut ↗ </button>
+                        </div>
+
+                        <div class="steps">
+                            <article>
+                                <span>01</span>
+                                <div>
+                                    <b>Bring your footage</b>
+                                    <p>Choose videos and audio from your device.</p>
+                                </div>
+                                <i>↗</i>
+                            </article>
+
+                            <article>
+                                <span>02</span>
+                                <div>
+                                    <b>Make it yours</b>
+                                    <p>Trim, style, add text and shape the sound.</p>
+                                </div>
+                                <i>↗</i>
+                            </article>
+
+                            <article>
+                                <span>03</span>
+                                <div>
+                                    <b>Export your story</b>
+                                    <p>Render a video you can save and share.</p>
+                                </div>
+                                <i>↗</i>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="landing-footer page-width" aria-label="WebClip Studio footer">
+                <div class="footer-main">
+                    <section class="footer-brand" aria-label="WebClip Studio brand">
+                        <a class="brand" href="#" aria-label="WebClip Studio home"><img class="brand-mark" src="assets/icons/webclip-mark.svg" alt=""><span>WebClip <em>Studio</em></span></a>
+                        <p class="footer-tagline">Your ideas. Your timeline. Your story.</p>
+                        <p class="footer-description">A thoughtful, browser-based workspace to shape your footage and bring your story to life.</p>
+                        <div class="footer-socials" aria-label="Social and contact links">
+                            <a class="footer-social" href="https://www.facebook.com/ravi04y?mibextid=ZbWKwL" data-social="facebook" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.1h2.8v8h3.4Z"/></svg></a>
+                            <a class="footer-social" href="https://www.instagram.com/ravi04y?exln=d3I1dHFiOHQ5NDdo" data-social="instagram" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm5 3a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2.2a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2Zm5.1-3.7a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg></a>
+                            <a class="footer-social" href="https://github.com/raviyadav004" data-social="github" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 2.1 3.8 1.5.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3.1 1.1a10.7 10.7 0 0 1 5.7 0c2.2-1.4 3.1-1.1 3.1-1.1.6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3 0 4.2-2.6 5.2-5.1 5.5.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.1 11.1 0 0 0 12 .9Z"/></svg></a>
+                            <a class="footer-social" href="mailto:ry3683948@gmail.com" data-social="email" title="Email Ravi Yadav" aria-label="Email Ravi Yadav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm9 7.2L3.2 7.1v.2l8.8 5.6 8.8-5.6v-.2L12 12.2Z"/></svg></a>
+                            <a class="footer-social" href="https://www.linkedin.com/in/ravi-yadav-36bb0b2b7?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" data-social="linkedin" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM3.3 9h3.8v12H3.3V9Zm6.1 0H13v1.6h.1A4.1 4.1 0 0 1 16.8 8c4 0 4.7 2.6 4.7 6V21h-3.8v-6.2c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21H9.4V9Z"/></svg></a>
+                        </div>
+                    </section>
+                    <nav class="footer-links" aria-label="Footer navigation">
+                        <div class="footer-link-group"><h2>Explore</h2><a href="#features">Features</a><a href="#how">How it works</a><a href="#features">What you can create</a></div>
+                        <div class="footer-link-group"><h2>Your studio</h2><a href="#editor" class="footer-editor-link">Open Studio <span aria-hidden="true">↗</span></a><a href="#editor" class="footer-editor-link">Import footage</a><a href="#editor" class="footer-editor-link">Edit and export</a></div>
+                    </nav>
+                </div>
+                <div class="footer-bottom">
+                    <span>© <span id="footerYear">2026</span> WebClip Studio. All rights reserved.</span>
+                    
+                </div>
+            </footer>
+        </section>
+
+        <section id="editor" class="editor hidden">
+            <header class="editor-header">
+                <div class="editor-header-main">
+                    <div class="editor-brand-group">
+                        <a href="#" id="home" class="brand" aria-label="Return to WebClip Studio home">
+                            <img class="brand-mark" src="assets/icons/webclip-mark.svg" alt="">
+                            <span>WebClip <em>Studio</em></span>
+                        </a>
+                    </div>
+
+                    <nav class="editor-menu-bar" aria-label="Editor menus">
+                        <details class="editor-menu">
+                            <summary>File <span aria-hidden="true">⌄</span></summary>
+                            <div class="editor-menu-popover">
+                                <button type="button" data-editor-command="new-project">New project</button>
+                                <button type="button" data-editor-command="import-media">Import media</button>
+                                <button type="button" data-editor-command="open-project">Open project</button>
+                                <button type="button" data-editor-command="save-project">Save project <kbd>Ctrl S</kbd></button>
+                                <span class="menu-separator"></span>
+                                <button type="button" data-editor-command="export-project">Export video</button>
+                                <button type="button" data-editor-command="go-home">Back to welcome</button>
+                            </div>
+                        </details>
+                        <details class="editor-menu">
+                            <summary>Edit <span aria-hidden="true">⌄</span></summary>
+                            <div class="editor-menu-popover">
+                                <button type="button" data-editor-command="undo" id="menuUndo">Undo <kbd>Ctrl Z</kbd></button>
+                                <button type="button" data-editor-command="redo" id="menuRedo">Redo <kbd>Ctrl Y</kbd></button>
+                                <span class="menu-separator"></span>
+                                <button type="button" data-editor-command="duplicate">Duplicate clip <kbd>Ctrl D</kbd></button>
+                                <button type="button" data-editor-command="split">Split at playhead</button>
+                                <button type="button" data-editor-command="delete">Delete selected clip <kbd>Del</kbd></button>
+                            </div>
+                        </details>
+                        <details class="editor-menu">
+                            <summary>View <span aria-hidden="true">⌄</span></summary>
+                            <div class="editor-menu-popover">
+                                <button type="button" data-editor-command="fit-timeline">Fit timeline</button>
+                                <button type="button" data-editor-command="toggle-media">Toggle media library</button>
+                                <button type="button" data-editor-command="toggle-inspector">Toggle inspector</button>
+                                <button type="button" data-editor-command="toggle-focus">Toggle editing focus</button>
+                            </div>
+                        </details>
+                        <details class="editor-menu">
+                            <summary>Tools <span aria-hidden="true">⌄</span></summary>
+                            <div class="editor-menu-popover">
+                                <button type="button" data-editor-command="import-media">Import video</button>
+                                <button type="button" data-editor-command="import-audio">Import audio</button>
+                                <button type="button" data-editor-command="add-text">Add text overlay</button>
+                                <button type="button" data-editor-command="split">Split selected clip</button>
+                                <button type="button" data-editor-command="duplicate">Duplicate selected clip</button>
+                            </div>
+                        </details>
+                        <details class="editor-menu">
+                            <summary>Help <span aria-hidden="true">⌄</span></summary>
+                            <div class="editor-menu-popover editor-help-popover">
+                                <strong>Keyboard shortcuts</strong>
+                                <span><kbd>Space</kbd> Play / pause</span>
+                                <span><kbd>Ctrl Z</kbd> Undo</span>
+                                <span><kbd>Ctrl Y</kbd> Redo</span>
+                                <span><kbd>Ctrl D</kbd> Duplicate clip</span>
+                                <span><kbd>Ctrl S</kbd> Save project</span>
+                                <span><kbd>Delete</kbd> Remove selected clip</span>
+                            </div>
+                        </details>
+                    </nav>
+
+                    <div class="project-name">
+                        <input id="projectName" value="Untitled project" maxlength="80" aria-label="Project name">
+                        <small id="saveStatus">No unsaved edits</small>
+                    </div>
+
+                    <div class="header-tools">
+                        <button class="icon-button theme-toggle" type="button" aria-label="Switch theme" title="Switch theme" aria-pressed="false">
+                            <svg class="theme-icon sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.7"></circle><path d="M12 2.2v2.1M12 19.7v2.1M4.9 4.9l1.5 1.5m11.2 11.2 1.5 1.5M2.2 12h2.1m15.4 0h2.1M4.9 19.1l1.5-1.5M17.6 6.4l1.5-1.5"></path></svg>
+                            <svg class="theme-icon moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.7 8.7 0 0 1 8.9 3.8 8.8 8.8 0 1 0 20.2 15.1Z"></path></svg>
+                        </button>
+                        <button id="openProject" class="button secondary small"><span aria-hidden="true">▱</span> Open</button>
+                        <button id="saveProject" class="button secondary small"><span aria-hidden="true">▣</span> Save</button>
+                        <button id="export" class="button primary small"><span aria-hidden="true">⇧</span> Export</button>
+                        <button id="editorMenuToggle" class="icon-button editor-menu-toggle" type="button" aria-label="Open editor navigation" aria-expanded="false" aria-controls="editorDrawer">☰</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="editor-drawer-backdrop" id="editorDrawerBackdrop" hidden></div>
+            <aside class="editor-drawer" id="editorDrawer" role="dialog" aria-modal="true" aria-label="Editor navigation" aria-hidden="true" inert>
+                <div class="editor-drawer-head">
+                    <a href="#" class="brand drawer-brand" aria-label="WebClip Studio home">
+                        <img class="brand-mark" src="assets/icons/webclip-mark.svg" alt="">
+                        <span>WebClip <em>Studio</em></span>
+                    </a>
+                    <button type="button" class="icon-button editor-drawer-close" aria-label="Close navigation">×</button>
+                </div>
+                <div class="editor-drawer-project">
+                    <span class="drawer-project-icon" aria-hidden="true">▣</span>
+                    <div><strong id="drawerProjectName">Untitled project</strong><small id="drawerProjectStatus">No unsaved edits</small></div>
+                </div>
+                <nav class="editor-drawer-nav" aria-label="Editor actions">
+                    <p>PROJECT</p>
+                    <button type="button" data-editor-command="new-project"><span>＋</span> New project</button>
+                    <button type="button" data-editor-command="import-media"><span>↥</span> Import video</button>
+                    <button type="button" data-editor-command="import-audio"><span>♫</span> Import audio</button>
+                    <button type="button" data-editor-command="add-text"><span>T</span> Add text overlay</button>
+                    <button type="button" data-editor-command="open-project"><span>▱</span> Open project</button>
+                    <button type="button" data-editor-command="save-project"><span>▣</span> Save project</button>
+                    <p>EDITING</p>
+                    <button type="button" data-editor-command="undo"><span>↶</span> Undo <kbd>Ctrl Z</kbd></button>
+                    <button type="button" data-editor-command="redo"><span>↷</span> Redo <kbd>Ctrl Y</kbd></button>
+                    <button type="button" data-editor-command="duplicate"><span>⧉</span> Duplicate clip</button>
+                    <button type="button" data-editor-command="split"><span>✂</span> Split at playhead</button>
+                    <button type="button" data-editor-command="delete"><span>⌫</span> Delete selected clip</button>
+                    <p>WORKSPACE</p>
+                    <button type="button" data-editor-command="fit-timeline"><span>↔</span> Fit timeline</button>
+                    <button type="button" data-editor-command="toggle-media"><span>▤</span> Toggle media library</button>
+                    <button type="button" data-editor-command="toggle-inspector"><span>☷</span> Toggle inspector</button>
+                    <button type="button" data-editor-command="toggle-focus"><span>⛶</span> Toggle editing focus</button>
+                    <button type="button" data-editor-command="go-home"><span>⌂</span> Back to welcome</button>
+                </nav>
+                <div class="editor-drawer-foot">
+                    <span>WebClip Studio</span>
+                    <small>Creative workspace</small>
+                </div>
+            </aside>
+
+            <div class="workspace">
+                <aside class="panel media-panel">
+                    <div class="panel-head">
+                        <div>
+                            <label>YOUR ASSETS</label>
+                            <h2>Media library</h2>
+                        </div>
+                        <div class="panel-head-actions">
+                            <span class="panel-count" id="mediaCountBadge">0 items</span>
+                            <button class="mobile-sheet-close icon-button" type="button" aria-label="Close media library">×</button>
+                            <button id="import" class="icon-button" title="Import media" aria-label="Import media">＋</button>
+                            <button class="panel-collapse-toggle" type="button" aria-label="Collapse media library" aria-expanded="true">⌄</button>
+                        </div>
+                    </div>
+
+                    <div class="media-tabs">
+                        <button class="active" data-filter="all"> All <b id="mediaCount">0</b> </button>
+                        <button data-filter="video">Video</button>
+                        <button data-filter="audio">Audio</button>
+                    </div>
+
+                    <div id="mediaList" class="media-list">
+                        <div class="empty-media">
+                            <span>↥</span>
+                            <b>Your story starts here</b>
+                            <p>Import a video or audio file to begin creating.</p>
+                            <button id="emptyImport" class="button secondary small"> Import media </button>
+                        </div>
+                    </div>
+
+                    <footer>
+                        ● Files stay on this device
+                        <button id="clearMedia" class="text-button">Clear</button>
+                    </footer>
+                </aside>
+
+                <main class="panel preview-panel">
+                    <div class="panel-head">
+                        <div>
+                            <label>THE BIG PICTURE</label>
+                            <h2>Preview</h2>
+                        </div>
+                        <span id="resolution" class="pill">Canvas · 16:9</span>
+                    </div>
+
+                    <div class="preview-wrap">
+                        <div class="preview-stage">
+                            <canvas id="canvas" width="1280" height="720"></canvas>
+                            <div id="previewEmpty" class="preview-empty">
+                                <span>▶</span>
+                                <h3>Your canvas is waiting.</h3>
+                                <p> Import a video and add it to the timeline to see your story come to life. </p>
+                                <button id="previewImport" class="button primary small"> Import your first video </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transport">
+                        <div>
+                            <button id="toStart" class="icon-button" title="Go to start" >|◀</button>
+                            <button id="back" class="icon-button" title="Step backward" >◀</button>
+                            <button id="play" class="play-button" aria-label="Play"> ▶ </button>
+                            <button id="forward" class="icon-button" title="Step forward" >▶|</button>
+                            <button id="toEnd" class="icon-button" title="Go to end" >▶|</button>
+                        </div>
+
+                        <strong id="currentTime">00:00.0</strong>
+                        <span>/</span>
+                        <span id="duration">00:00.0</span>
+
+                        <div class="volume">
+                            <span>◖</span>
+                            <input id="volume" type="range" min="0" max="100" value="80" aria-label="Preview volume" >
+                        </div>
+                    </div>
+
+                    <div class="preview-meta">
+                        <span id="previewHint">Import a video to get started</span>
+                        <span id="dimensions">1280 × 720</span>
+                    </div>
+                </main>
+
+                <aside class="panel inspector-panel">
+                    <div class="panel-head">
+                        <div>
+                            <label>MAKE IT YOURS</label>
+                            <h2>Inspector</h2>
+                        </div>
+                        <div class="panel-head-actions">
+                            <button class="mobile-sheet-close icon-button" type="button" aria-label="Close inspector">×</button>
+                            <button id="resetProps" class="icon-button" title="Reset selected properties" aria-label="Reset selected properties">↺</button>
+                            <button class="panel-collapse-toggle" type="button" aria-label="Collapse inspector" aria-expanded="true">⌄</button>
+                        </div>
+                    </div>
+
+                    <div id="inspector" class="inspector">
+                        <div class="empty-inspector">
+                            <span>◈</span>
+                            <b>Nothing selected yet</b>
+                            <p> Select a clip on the timeline to fine-tune its look and feel. </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <section class="panel timeline-panel">
+                <div class="timeline-head">
+                    <div>
+                        <label>BUILD YOUR STORY</label>
+                        <h2>Timeline <span id="clipCount">0 clips</span></h2>
+                    </div>
+
+                    <div class="timeline-tools">
+                        <button id="addText" class="button secondary small"> ＋ Add text </button>
+                        <button id="split" class="button secondary small" disabled >✂ Split</button>
+                        <button id="duplicate" class="icon-button" disabled title="Duplicate selected clip (Ctrl/Cmd + D)" aria-label="Duplicate selected clip">⧉</button>
+                        <button id="delete" class="icon-button" disabled title="Delete clip" aria-label="Delete selected clip">⌫</button>
+                        <span class="divider"></span>
+                        <button id="zoomOut" class="icon-button" title="Zoom out"> − </button>
+                        <input id="zoom" type="range" min="25" max="200" value="100" aria-label="Timeline zoom" >
+                        <button id="zoomIn" class="icon-button" title="Zoom in"> ＋ </button>
+                        <button id="zoomFit" class="button secondary small" title="Fit the complete timeline in view">Fit</button>
+                    </div>
+                </div>
+
+                <div id="timelineScroll" class="timeline-scroll">
+                    <div id="timelineCanvas" class="timeline-canvas">
+                        <div class="ruler-row">
+                            <div>TRACK</div>
+                            <div id="ruler" class="ruler"> <span>00:00</span> </div>
+                        </div>
+
+                        <div class="track-row">
+                            <div class="track-label"> <b>▶</b> Video <small>V1</small> </div>
+                            <div id="videoTrack" class="track-content"> <span class="track-empty"> Import a video, then add it to your timeline. </span> </div>
+                        </div>
+
+                        <div class="track-row">
+                            <div class="track-label"> <b class="text-track-icon">T</b> Text <small>T1</small> </div>
+                            <div id="textTrack" class="track-content"> <span class="track-empty"> Your titles and captions will appear here. </span> </div>
+                        </div>
+
+                        <div class="track-row">
+                            <div class="track-label"> <b class="audio-track-icon">♫</b> Audio <small>A1</small> </div>
+                            <div id="audioTrack" class="track-content"> <span class="track-empty"> Add background audio from your library. </span> </div>
+                        </div>
+
+                        <div id="playhead" class="playhead"> <i></i> </div>
+                    </div>
+                </div>
+
+                <footer class="timeline-footer">
+                    <span>Video · Text · Audio <small class="shortcut-hint">Space: play/pause · Ctrl/Cmd + D: duplicate</small></span>
+                    <div>
+                        <span id="timelineDuration">Duration 00:00.0</span>
+                        <button id="addVideo" class="text-button"> ＋ Add video to timeline </button>
+                        <button id="addAudio" class="text-button"> ＋ Add audio </button>
+                    </div>
+                </footer>
+            </section>
+
+            <div class="welcome editor-footer-skin" aria-label="Editor footer region">
+                <footer class="landing-footer page-width" aria-label="WebClip Studio footer">
+                <div class="footer-main">
+                    <section class="footer-brand" aria-label="WebClip Studio brand">
+                        <a class="brand" href="#" id="editorFooterHome" aria-label="Return to WebClip Studio home"><img class="brand-mark" src="assets/icons/webclip-mark.svg" alt=""><span>WebClip <em>Studio</em></span></a>
+                        <p class="footer-tagline">Your ideas. Your timeline. Your story.</p>
+                        <p class="footer-description">A thoughtful, browser-based workspace to shape your footage and bring your story to life.</p>
+                        <div class="footer-socials" aria-label="Social and contact links">
+                            <a class="footer-social" href="https://www.facebook.com/ravi04y?mibextid=ZbWKwL" data-social="facebook" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.1h2.8v8h3.4Z"/></svg></a>
+                            <a class="footer-social" href="https://www.instagram.com/ravi04y?exln=d3I1dHFiOHQ5NDdo" data-social="instagram" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm5 3a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2.2a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2Zm5.1-3.7a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg></a>
+                            <a class="footer-social" href="https://github.com/raviyadav004" data-social="github" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 2.1 3.8 1.5.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3.1 1.1a10.7 10.7 0 0 1 5.7 0c2.2-1.4 3.1-1.1 3.1-1.1.6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3 0 4.2-2.6 5.2-5.1 5.5.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.1 11.1 0 0 0 12 .9Z"/></svg></a>
+                            <a class="footer-social" href="mailto:ry3683948@gmail.com" data-social="email" title="Email Ravi Yadav" aria-label="Email Ravi Yadav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm9 7.2L3.2 7.1v.2l8.8 5.6 8.8-5.6v-.2L12 12.2Z"/></svg></a>
+                            <a class="footer-social" href="https://www.linkedin.com/in/ravi-yadav-36bb0b2b7?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" data-social="linkedin" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM3.3 9h3.8v12H3.3V9Zm6.1 0H13v1.6h.1A4.1 4.1 0 0 1 16.8 8c4 0 4.7 2.6 4.7 6V21h-3.8v-6.2c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21H9.4V9Z"/></svg></a>
+                        </div>
+                    </section>
+                    <nav class="footer-links" aria-label="Footer navigation">
+                        <div class="footer-link-group"><h2>Explore</h2><a href="#features">Features</a><a href="#how">How it works</a><a href="#features">What you can create</a></div>
+                        <div class="footer-link-group"><h2>Your studio</h2><a href="#editor" class="footer-editor-link">Open Studio <span aria-hidden="true">↗</span></a><a href="#editor" class="footer-editor-link">Import footage</a><a href="#editor" class="footer-editor-link">Edit and export</a></div>
+                    </nav>
+                </div>
+                <div class="footer-bottom">
+                    <span>© <span id="editorFooterYear">2026</span> WebClip Studio. All rights reserved.</span>
+                    
+                </div>
+            </footer>
+            </div>
+
+        </section>
+    </div>
+
+    <input id="videoInput" class="visually-hidden" type="file" accept="video/*" multiple >
+    <input id="audioInput" class="visually-hidden" type="file" accept="audio/*" multiple >
+    <input id="projectInput" class="visually-hidden" type="file" accept=".webclip.json,.json,application/json" >
+
+    <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+    <dialog id="exportDialog" class="dialog">
+        <form method="dialog" class="dialog-close">
+            <button class="icon-button" value="cancel" aria-label="Close">×</button>
+        </form>
+
+        <div class="dialog-icon">⇩</div>
+        <label>READY FOR THE WORLD</label>
+        <h2>Export your video</h2>
+        <p> Give your final cut a name and choose supported output settings. </p>
+
+        <div class="field">
+            <label for="exportName">File name</label>
+            <div class="suffix-input">
+                <input id="exportName" value="webclip-final" maxlength="80">
+                <span>.webm</span>
+            </div>
+        </div>
+
+        <div class="field-grid">
+            <div class="field">
+                <label for="exportSize">Resolution</label>
+                <select id="exportSize">
+                    <option value="source">Match project canvas</option>
+                    <option value="720">1280 × 720 (HD)</option>
+                    <option value="1080">1920 × 1080 (Full HD)</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="exportFps">Frame rate</label>
+                <select id="exportFps">
+                    <option value="30">30 FPS</option>
+                    <option value="24">24 FPS</option>
+                    <option value="25">25 FPS</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="info-box"> ⓘ Export runs in your browser. Format support and performance depend on your device. Keep this tab open while rendering. </div>
+        <div id="preflight" class="error-box hidden"></div>
+
+        <div class="dialog-actions">
+            <button id="cancelExport" class="button secondary">Not yet</button>
+            <button id="render" class="button primary">Render video ↗</button>
+        </div>
+    </dialog>
+
+    <dialog id="renderDialog" class="dialog render-dialog">
+        <div class="render-spinner"></div>
+        <label>THE FINAL CUT</label>
+        <h2 id="renderTitle">Rendering your video</h2>
+        <p id="renderDescription"> Compositing your timeline into a downloadable video. </p>
+
+        <div class="progress"> <i id="progressBar"></i> </div>
+        <div class="progress-meta">
+            <b id="progressLabel">Preparing renderer…</b>
+            <span id="progressPercent">0%</span>
+        </div>
+
+        <div id="renderInfo" class="info-box"> Rendering happens in this tab. Longer projects may take longer than their timeline duration. </div>
+        <div id="renderError" class="error-box hidden"></div>
+
+        <div class="dialog-actions">
+            <button id="cancelRender" class="button secondary">Cancel export</button>
+            <button id="retryRender" class="button primary hidden">Try again</button>
+        </div>
+    </dialog>
+
+    <dialog id="successDialog" class="dialog success-dialog">
+        <form method="dialog" class="dialog-close">
+            <button class="icon-button" value="cancel" aria-label="Close">×</button>
+        </form>
+
+        <div class="success-icon">✓</div>
+        <label>THAT'S A WRAP</label>
+        <h2>Your video is ready.</h2>
+        <p> Your render is complete. Download your video or return to your edit. </p>
+
+        <div class="file-card">
+            <span>▣</span>
+            <div>
+                <b id="successName">webclip-final.webm</b>
+                <small id="successDetails">Video export · Ready to download</small>
+            </div>
+        </div>
+
+        <div class="stacked-actions">
+            <a id="downloadLink" class="button primary full" href="#" download="webclip-final.webm" >⇩ Download video</a>
+            <button id="continueEditing" class="button secondary full"> Continue editing </button>
+            <button id="newProject" class="text-button"> Start a new project </button>
+        </div>
+    </dialog>
+
+    <dialog id="confirmDialog" class="dialog">
+        <div class="dialog-icon warning">!</div>
+        <h2 id="confirmTitle">Are you sure?</h2>
+        <p id="confirmMessage">This action cannot be undone.</p>
+        <div class="dialog-actions">
+            <button id="confirmNo" class="button secondary">Cancel</button>
+            <button id="confirmYes" class="button danger">Continue</button>
+        </div>
+    </dialog>
+
+    <dialog id="saveDialog" class="dialog">
+        <form method="dialog" class="dialog-close">
+            <button class="icon-button" value="cancel" aria-label="Close">×</button>
+        </form>
+
+        <div class="dialog-icon">▣</div>
+        <label>KEEP YOUR CUT</label>
+        <h2>Save your project</h2>
+        <p> Save edit decisions as a project file. Source media may need to be re-selected when reopening it. </p>
+
+        <div class="field">
+            <label for="saveName">Project file name</label>
+            <input id="saveName" value="webclip-project">
+        </div>
+
+        <div class="info-box"> Project JSON stores the timeline and settings, not the original video/audio files. </div>
+        <div class="dialog-actions">
+            <button id="cancelSave" class="button secondary">Cancel</button>
+            <button id="downloadProject" class="button primary"> Save project file </button>
+        </div>
+    </dialog>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
